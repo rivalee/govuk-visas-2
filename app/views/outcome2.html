@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        You need to pass a secure English language test (SELT)
+      </h1>
+
+      <p>You’ll need to prove that you can read, write, speak and understand English to at least
+         <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale">level B1 on the CEFR scale</a>
+        ('independent user'). 
+         <p>
+
+
+      <h2 class="govuk-heading-m">Finding and booking a test</h2>
+      <p>It can take a few weeks to book a test and you’ll need to pay a fee.</p>
+
+      <ol class="govuk-list govuk-list--number">
+        <li><a href="#">Find what tests you can take</a></li>
+        <li><a href="#">Find an approved test centre to take your test</a></li>
+        </ol>
+
+
+    <p>If you’ve passed a test in the past 2 years, you can use that instead of taking a new one.</p>
+
+    <p>Once you’ve booked and taken your test, you’ll get a SELT unique reference number to include in your application.</p>
+
+
+    <h2 class="govuk-heading-s govuk-!-margin-top-8">Have you completed this task?<h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+            Yes, I’ve got a SELT number
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+            No, I’ll come back to this task later
+          </label>
+        </div>
+      </div>
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+   Save and return to task list
+ </button>
+      </div>
+
+
+    </div>
+  </div>
+
+{% endblock %}
